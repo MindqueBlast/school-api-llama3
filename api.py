@@ -91,8 +91,7 @@ def get_students():
 
 @app.route("/api/students/<int:student_id>", methods=["GET"])
 def get_student(student_id):
-    student = next((s for s in students if s["id"] == student_id), None)
-    if student:
+    if (student := next((s for s in students if s["id"] == student_id), None)):
         return jsonify(student)
     return jsonify({"error": "Student not found"}), 404
 
