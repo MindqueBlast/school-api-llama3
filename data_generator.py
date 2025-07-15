@@ -165,5 +165,5 @@ while len(entries) < 1000:
         else:
             break
 
-with open("synthetic_school_api_data.json", "w") as f:
+with open("school_api_data.json", "w") as f:
     json.dump(entries, f, indent=2)
