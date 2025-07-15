@@ -1,552 +1,5002 @@
 [
-    {
-      "instruction": "Get details of teacher 1.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/1"
-    },
-    {
-      "instruction": "Delete teacher 1.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/1"
-    },
-    {
-      "instruction": "Update teacher 1's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/1 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 2.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/2"
-    },
-    {
-      "instruction": "Delete teacher 2.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/2"
-    },
-    {
-      "instruction": "Update teacher 2's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/2 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 3.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/3"
-    },
-    {
-      "instruction": "Delete teacher 3.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/3"
-    },
-    {
-      "instruction": "Update teacher 3's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/3 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 4.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/4"
-    },
-    {
-      "instruction": "Delete teacher 4.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/4"
-    },
-    {
-      "instruction": "Update teacher 4's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/4 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 5.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/5"
-    },
-    {
-      "instruction": "Delete teacher 5.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/5"
-    },
-    {
-      "instruction": "Update teacher 5's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/5 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "List all teachers.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers"
-    },
-    {
-      "instruction": "Get details of student 101.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/101"
-    },
-    {
-      "instruction": "Delete student 101.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/101"
-    },
-    {
-      "instruction": "Update student 101's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/101 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 102.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/102"
-    },
-    {
-      "instruction": "Delete student 102.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/102"
-    },
-    {
-      "instruction": "Update student 102's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/102 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 103.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/103"
-    },
-    {
-      "instruction": "Delete student 103.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/103"
-    },
-    {
-      "instruction": "Update student 103's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/103 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 104.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/104"
-    },
-    {
-      "instruction": "Delete student 104.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/104"
-    },
-    {
-      "instruction": "Update student 104's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/104 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 105.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/105"
-    },
-    {
-      "instruction": "Delete student 105.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/105"
-    },
-    {
-      "instruction": "Update student 105's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/105 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get all students in grade 9.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=9"
-    },
-    {
-      "instruction": "Get all students in grade 10.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=10"
-    },
-    {
-      "instruction": "Get all students in grade 11.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=11"
-    },
-    {
-      "instruction": "Get all students in grade 12.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=12"
-    },
-    {
-      "instruction": "Get all grades for student 101.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=101"
-    },
-    {
-      "instruction": "Delete all grades for student 101.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/101"
-    },
-    {
-      "instruction": "Update grades for student 101 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/101 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    },
-    {
-      "instruction": "Get all grades for student 102.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=102"
-    },
-    {
-      "instruction": "Delete all grades for student 102.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/102"
-    },
-    {
-      "instruction": "Update grades for student 102 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/102 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    },
-    {
-      "instruction": "Get all grades for student 103.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=103"
-    },
-    {
-      "instruction": "Delete all grades for student 103.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/103"
-    },
-    {
-      "instruction": "Update grades for student 103 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/103 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    },
-    {
-      "instruction": "Get all grades for student 104.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=104"
-    },
-    {
-      "instruction": "Delete all grades for student 104.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/104"
-    },
-    {
-      "instruction": "Update grades for student 104 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/104 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    },
-    {
-      "instruction": "Get all grades for student 105.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=105"
-    },
-    {
-      "instruction": "Delete all grades for student 105.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/105"
-    },
-    {
-      "instruction": "Update grades for student 105 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/105 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    },
-    {
-      "instruction": "Get schedule for Monday.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule?day=Monday"
-    },
-    {
-      "instruction": "Delete schedule for Monday.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/schedule/Monday"
-    },
-    {
-      "instruction": "Update schedule for Monday to have Math, Science, and Art.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Art\\\"]}"
-    },
-    {
-      "instruction": "Get schedule for Tuesday.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
-    },
-    {
-      "instruction": "Delete schedule for Tuesday.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
-    },
-    {
-      "instruction": "Update schedule for Tuesday to have Math, Science, and Art.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Art\\\"]}"
-    },
-    {
-      "instruction": "Get schedule for Wednesday.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
-    },
-    {
-      "instruction": "Delete schedule for Wednesday.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
-    },
-    {
-      "instruction": "Update schedule for Wednesday to have Math, Science, and Art.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Art\\\"]}"
-    },
-    {
-      "instruction": "Get schedule for Thursday.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule?day=Thursday"
-    },
-    {
-      "instruction": "Delete schedule for Thursday.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/schedule/Thursday"
-    },
-    {
-      "instruction": "Update schedule for Thursday to have Math, Science, and Art.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Art\\\"]}"
-    },
-    {
-      "instruction": "Get schedule for Friday.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule?day=Friday"
-    },
-    {
-      "instruction": "Delete schedule for Friday.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/schedule/Friday"
-    },
-    {
-      "instruction": "Update schedule for Friday to have Math, Science, and Art.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Art\\\"]}"
-    },
-    {
-      "instruction": "Get the school budget details.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/budget"
-    },
-    {
-      "instruction": "Update the school budget total to 999999.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 999999}"
-    },
-    {
-      "instruction": "Update the school budget spent to 999999.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 999999}"
-    },
-    {
-      "instruction": "Update the school budget remaining to 999999.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 999999}"
-    },
-    {
-      "instruction": "Get a list of all students.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students"
-    },
-    {
-      "instruction": "Get a list of all grades.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades"
-    },
-    {
-      "instruction": "Get the full school schedule.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/schedule"
-    },
-    {
-      "instruction": "Get details of teacher 1.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/1"
-    },
-    {
-      "instruction": "Delete teacher 1.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/1"
-    },
-    {
-      "instruction": "Update teacher 1's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/1 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 2.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/2"
-    },
-    {
-      "instruction": "Delete teacher 2.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/2"
-    },
-    {
-      "instruction": "Update teacher 2's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/2 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 3.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/3"
-    },
-    {
-      "instruction": "Delete teacher 3.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/3"
-    },
-    {
-      "instruction": "Update teacher 3's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/3 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 4.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/4"
-    },
-    {
-      "instruction": "Delete teacher 4.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/4"
-    },
-    {
-      "instruction": "Update teacher 4's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/4 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "Get details of teacher 5.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers/5"
-    },
-    {
-      "instruction": "Delete teacher 5.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/teachers/5"
-    },
-    {
-      "instruction": "Update teacher 5's subject to History.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/teachers/5 {\\\"subject\\\": \\\"History\\\"}"
-    },
-    {
-      "instruction": "List all teachers.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/teachers"
-    },
-    {
-      "instruction": "Get details of student 101.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/101"
-    },
-    {
-      "instruction": "Delete student 101.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/101"
-    },
-    {
-      "instruction": "Update student 101's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/101 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 102.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/102"
-    },
-    {
-      "instruction": "Delete student 102.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/102"
-    },
-    {
-      "instruction": "Update student 102's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/102 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 103.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/103"
-    },
-    {
-      "instruction": "Delete student 103.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/103"
-    },
-    {
-      "instruction": "Update student 103's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/103 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 104.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/104"
-    },
-    {
-      "instruction": "Delete student 104.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/104"
-    },
-    {
-      "instruction": "Update student 104's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/104 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get details of student 105.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students/105"
-    },
-    {
-      "instruction": "Delete student 105.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/students/105"
-    },
-    {
-      "instruction": "Update student 105's grade to 12.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/students/105 {\\\"grade\\\": 12}"
-    },
-    {
-      "instruction": "Get all students in grade 9.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=9"
-    },
-    {
-      "instruction": "Get all students in grade 10.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=10"
-    },
-    {
-      "instruction": "Get all students in grade 11.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=11"
-    },
-    {
-      "instruction": "Get all students in grade 12.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/students?gradeLevel=12"
-    },
-    {
-      "instruction": "Get all grades for student 101.",
-      "input": "",
-      "output": "GET http://localhost:5001/api/grades?student_id=101"
-    },
-    {
-      "instruction": "Delete all grades for student 101.",
-      "input": "",
-      "output": "DELETE http://localhost:5001/api/grades/101"
-    },
-    {
-      "instruction": "Update grades for student 101 to A in Math and B in Science.",
-      "input": "",
-      "output": "PUT http://localhost:5001/api/grades/101 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"B\\\"}]"
-    }
-  ]
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 347.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=347"
+  },
+  {
+    "instruction": "Delete all grades for student 347.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/347"
+  },
+  {
+    "instruction": "Update grades for student 347 to D in Chemistry and E in Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/347 [{\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have English, Math, Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"English\\\", \\\"Math\\\", \\\"Geography\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 81.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Delete teacher 81.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Update teacher 81's subject to Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/81 {\\\"subject\\\": \\\"Geography\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Update the school budget total to 526857.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 526857}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 382.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/382"
+  },
+  {
+    "instruction": "Delete student 382.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/382"
+  },
+  {
+    "instruction": "Update student 382's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/382 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 143.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/143"
+  },
+  {
+    "instruction": "Delete student 143.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/143"
+  },
+  {
+    "instruction": "Update student 143's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/143 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget total to 530321.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 530321}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Biology, English, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Biology\\\", \\\"English\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 333.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/333"
+  },
+  {
+    "instruction": "Delete student 333.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/333"
+  },
+  {
+    "instruction": "Update student 333's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/333 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have History, Science, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"History\\\", \\\"Science\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 429932.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 429932}"
+  },
+  {
+    "instruction": "Update the school budget spent to 168624.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 168624}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 581.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/581"
+  },
+  {
+    "instruction": "Delete student 581.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/581"
+  },
+  {
+    "instruction": "Update student 581's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/581 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 53.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/53"
+  },
+  {
+    "instruction": "Delete teacher 53.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/53"
+  },
+  {
+    "instruction": "Update teacher 53's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/53 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Art, Biology, Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Art\\\", \\\"Biology\\\", \\\"Chemistry\\\"]}"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have Biology, Art, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Biology\\\", \\\"Art\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Geography, History, PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Geography\\\", \\\"History\\\", \\\"PE\\\"]}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget remaining to 876569.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 876569}"
+  },
+  {
+    "instruction": "Get details of teacher 79.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/79"
+  },
+  {
+    "instruction": "Delete teacher 79.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/79"
+  },
+  {
+    "instruction": "Update teacher 79's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/79 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Science, History, PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Science\\\", \\\"History\\\", \\\"PE\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 556.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/556"
+  },
+  {
+    "instruction": "Delete student 556.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/556"
+  },
+  {
+    "instruction": "Update student 556's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/556 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get details of teacher 75.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/75"
+  },
+  {
+    "instruction": "Delete teacher 75.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/75"
+  },
+  {
+    "instruction": "Update teacher 75's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/75 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 357.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=357"
+  },
+  {
+    "instruction": "Delete all grades for student 357.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/357"
+  },
+  {
+    "instruction": "Update grades for student 357 to A in Biology and B in PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/357 [{\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get details of student 376.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/376"
+  },
+  {
+    "instruction": "Delete student 376.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/376"
+  },
+  {
+    "instruction": "Update student 376's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/376 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get all grades for student 116.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=116"
+  },
+  {
+    "instruction": "Delete all grades for student 116.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/116"
+  },
+  {
+    "instruction": "Update grades for student 116 to F in History and C in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/116 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget total to 130322.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 130322}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have Chemistry, Biology, Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Chemistry\\\", \\\"Biology\\\", \\\"Geography\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 161.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/161"
+  },
+  {
+    "instruction": "Delete student 161.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/161"
+  },
+  {
+    "instruction": "Update student 161's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/161 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 344.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/344"
+  },
+  {
+    "instruction": "Delete student 344.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/344"
+  },
+  {
+    "instruction": "Update student 344's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/344 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Update the school budget total to 677800.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 677800}"
+  },
+  {
+    "instruction": "Get all grades for student 287.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=287"
+  },
+  {
+    "instruction": "Delete all grades for student 287.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/287"
+  },
+  {
+    "instruction": "Update grades for student 287 to E in Chemistry and C in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/287 [{\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 424.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/424"
+  },
+  {
+    "instruction": "Delete student 424.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/424"
+  },
+  {
+    "instruction": "Update student 424's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/424 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have PE, Biology, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"PE\\\", \\\"Biology\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get details of teacher 81.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Delete teacher 81.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Update teacher 81's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/81 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 57.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/57"
+  },
+  {
+    "instruction": "Delete teacher 57.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/57"
+  },
+  {
+    "instruction": "Update teacher 57's subject to Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/57 {\\\"subject\\\": \\\"Science\\\"}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Science, Geography, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Science\\\", \\\"Geography\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 481503.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 481503}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 213.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=213"
+  },
+  {
+    "instruction": "Delete all grades for student 213.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/213"
+  },
+  {
+    "instruction": "Update grades for student 213 to D in Art and A in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/213 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 575.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/575"
+  },
+  {
+    "instruction": "Delete student 575.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/575"
+  },
+  {
+    "instruction": "Update student 575's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/575 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have Music, Biology, Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Music\\\", \\\"Biology\\\", \\\"Geography\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget total to 588783.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 588783}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get details of student 194.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/194"
+  },
+  {
+    "instruction": "Delete student 194.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/194"
+  },
+  {
+    "instruction": "Update student 194's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/194 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all grades for student 166.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=166"
+  },
+  {
+    "instruction": "Delete all grades for student 166.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/166"
+  },
+  {
+    "instruction": "Update grades for student 166 to F in PE and E in Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/166 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have Chemistry, PE, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"Chemistry\\\", \\\"PE\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 148.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=148"
+  },
+  {
+    "instruction": "Delete all grades for student 148.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/148"
+  },
+  {
+    "instruction": "Update grades for student 148 to C in Math and E in Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/148 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 100.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/100"
+  },
+  {
+    "instruction": "Delete teacher 100.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/100"
+  },
+  {
+    "instruction": "Update teacher 100's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/100 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 610641.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 610641}"
+  },
+  {
+    "instruction": "Get all grades for student 209.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=209"
+  },
+  {
+    "instruction": "Delete all grades for student 209.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/209"
+  },
+  {
+    "instruction": "Update grades for student 209 to F in English and A in PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/209 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 31.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/31"
+  },
+  {
+    "instruction": "Delete teacher 31.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/31"
+  },
+  {
+    "instruction": "Update teacher 31's subject to Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/31 {\\\"subject\\\": \\\"Science\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have Geography, English, PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Geography\\\", \\\"English\\\", \\\"PE\\\"]}"
+  },
+  {
+    "instruction": "Get all grades for student 437.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=437"
+  },
+  {
+    "instruction": "Delete all grades for student 437.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/437"
+  },
+  {
+    "instruction": "Update grades for student 437 to D in Chemistry and F in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/437 [{\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 54.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/54"
+  },
+  {
+    "instruction": "Delete teacher 54.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/54"
+  },
+  {
+    "instruction": "Update teacher 54's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/54 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 127.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=127"
+  },
+  {
+    "instruction": "Delete all grades for student 127.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/127"
+  },
+  {
+    "instruction": "Update grades for student 127 to C in Music and B in English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/127 [{\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get all grades for student 374.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=374"
+  },
+  {
+    "instruction": "Delete all grades for student 374.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/374"
+  },
+  {
+    "instruction": "Update grades for student 374 to F in Math and C in Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/374 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of teacher 104.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/104"
+  },
+  {
+    "instruction": "Delete teacher 104.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/104"
+  },
+  {
+    "instruction": "Update teacher 104's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/104 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 661744.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 661744}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget remaining to 385821.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 385821}"
+  },
+  {
+    "instruction": "Update the school budget total to 380699.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 380699}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all grades for student 279.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=279"
+  },
+  {
+    "instruction": "Delete all grades for student 279.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/279"
+  },
+  {
+    "instruction": "Update grades for student 279 to B in Art and C in Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/279 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of teacher 30.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/30"
+  },
+  {
+    "instruction": "Delete teacher 30.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/30"
+  },
+  {
+    "instruction": "Update teacher 30's subject to Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/30 {\\\"subject\\\": \\\"Art\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all grades for student 245.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=245"
+  },
+  {
+    "instruction": "Delete all grades for student 245.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/245"
+  },
+  {
+    "instruction": "Update grades for student 245 to B in Chemistry and E in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/245 [{\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get all grades for student 266.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=266"
+  },
+  {
+    "instruction": "Delete all grades for student 266.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/266"
+  },
+  {
+    "instruction": "Update grades for student 266 to D in Art and F in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/266 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have Art, English, Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Art\\\", \\\"English\\\", \\\"Biology\\\"]}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have Biology, Chemistry, English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Biology\\\", \\\"Chemistry\\\", \\\"English\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget spent to 282591.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 282591}"
+  },
+  {
+    "instruction": "Update the school budget spent to 237268.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 237268}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget total to 619847.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 619847}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 68.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/68"
+  },
+  {
+    "instruction": "Delete teacher 68.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/68"
+  },
+  {
+    "instruction": "Update teacher 68's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/68 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get details of teacher 46.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/46"
+  },
+  {
+    "instruction": "Delete teacher 46.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/46"
+  },
+  {
+    "instruction": "Update teacher 46's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/46 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have PE, English, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"PE\\\", \\\"English\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Chemistry, English, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Chemistry\\\", \\\"English\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get details of student 329.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/329"
+  },
+  {
+    "instruction": "Delete student 329.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/329"
+  },
+  {
+    "instruction": "Update student 329's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/329 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 67.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/67"
+  },
+  {
+    "instruction": "Delete teacher 67.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/67"
+  },
+  {
+    "instruction": "Update teacher 67's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/67 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Update the school budget total to 963593.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 963593}"
+  },
+  {
+    "instruction": "Get details of teacher 96.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/96"
+  },
+  {
+    "instruction": "Delete teacher 96.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/96"
+  },
+  {
+    "instruction": "Update teacher 96's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/96 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 282.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=282"
+  },
+  {
+    "instruction": "Delete all grades for student 282.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/282"
+  },
+  {
+    "instruction": "Update grades for student 282 to B in Art and F in Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/282 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 51.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/51"
+  },
+  {
+    "instruction": "Delete teacher 51.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/51"
+  },
+  {
+    "instruction": "Update teacher 51's subject to Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/51 {\\\"subject\\\": \\\"Geography\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 287.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/287"
+  },
+  {
+    "instruction": "Delete student 287.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/287"
+  },
+  {
+    "instruction": "Update student 287's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/287 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/12"
+  },
+  {
+    "instruction": "Delete teacher 12.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/12"
+  },
+  {
+    "instruction": "Update teacher 12's subject to Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/12 {\\\"subject\\\": \\\"Art\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 560.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=560"
+  },
+  {
+    "instruction": "Delete all grades for student 560.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/560"
+  },
+  {
+    "instruction": "Update grades for student 560 to A in Biology and B in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/560 [{\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get all grades for student 516.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=516"
+  },
+  {
+    "instruction": "Delete all grades for student 516.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/516"
+  },
+  {
+    "instruction": "Update grades for student 516 to A in PE and F in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/516 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get details of student 370.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/370"
+  },
+  {
+    "instruction": "Delete student 370.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/370"
+  },
+  {
+    "instruction": "Update student 370's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/370 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have English, Math, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"English\\\", \\\"Math\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 465.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/465"
+  },
+  {
+    "instruction": "Delete student 465.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/465"
+  },
+  {
+    "instruction": "Update student 465's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/465 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of teacher 92.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/92"
+  },
+  {
+    "instruction": "Delete teacher 92.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/92"
+  },
+  {
+    "instruction": "Update teacher 92's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/92 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 98.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Delete teacher 98.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Update teacher 98's subject to Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/98 {\\\"subject\\\": \\\"Art\\\"}"
+  },
+  {
+    "instruction": "Get details of student 520.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/520"
+  },
+  {
+    "instruction": "Delete student 520.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/520"
+  },
+  {
+    "instruction": "Update student 520's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/520 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 88.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/88"
+  },
+  {
+    "instruction": "Delete teacher 88.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/88"
+  },
+  {
+    "instruction": "Update teacher 88's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/88 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all grades for student 290.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=290"
+  },
+  {
+    "instruction": "Delete all grades for student 290.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/290"
+  },
+  {
+    "instruction": "Update grades for student 290 to B in Music and F in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/290 [{\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Update the school budget total to 208577.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 208577}"
+  },
+  {
+    "instruction": "Get details of teacher 98.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Delete teacher 98.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Update teacher 98's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/98 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget total to 151206.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 151206}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 195.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=195"
+  },
+  {
+    "instruction": "Delete all grades for student 195.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/195"
+  },
+  {
+    "instruction": "Update grades for student 195 to C in English and F in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/195 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 387.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=387"
+  },
+  {
+    "instruction": "Delete all grades for student 387.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/387"
+  },
+  {
+    "instruction": "Update grades for student 387 to B in Chemistry and F in Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/387 [{\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 41.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/41"
+  },
+  {
+    "instruction": "Delete teacher 41.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/41"
+  },
+  {
+    "instruction": "Update teacher 41's subject to Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/41 {\\\"subject\\\": \\\"Art\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 125.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=125"
+  },
+  {
+    "instruction": "Delete all grades for student 125.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/125"
+  },
+  {
+    "instruction": "Update grades for student 125 to E in History and B in Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/125 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Math, Music, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Math\\\", \\\"Music\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 543.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/543"
+  },
+  {
+    "instruction": "Delete student 543.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/543"
+  },
+  {
+    "instruction": "Update student 543's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/543 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all grades for student 161.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=161"
+  },
+  {
+    "instruction": "Delete all grades for student 161.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/161"
+  },
+  {
+    "instruction": "Update grades for student 161 to E in PE and F in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/161 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Update the school budget total to 844642.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 844642}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of student 202.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/202"
+  },
+  {
+    "instruction": "Delete student 202.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/202"
+  },
+  {
+    "instruction": "Update student 202's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/202 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 37.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/37"
+  },
+  {
+    "instruction": "Delete teacher 37.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/37"
+  },
+  {
+    "instruction": "Update teacher 37's subject to English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/37 {\\\"subject\\\": \\\"English\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get details of teacher 7.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/7"
+  },
+  {
+    "instruction": "Delete teacher 7.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/7"
+  },
+  {
+    "instruction": "Update teacher 7's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/7 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 59.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/59"
+  },
+  {
+    "instruction": "Delete teacher 59.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/59"
+  },
+  {
+    "instruction": "Update teacher 59's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/59 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget spent to 585755.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 585755}"
+  },
+  {
+    "instruction": "Get details of student 550.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/550"
+  },
+  {
+    "instruction": "Delete student 550.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/550"
+  },
+  {
+    "instruction": "Update student 550's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/550 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 34.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/34"
+  },
+  {
+    "instruction": "Delete teacher 34.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/34"
+  },
+  {
+    "instruction": "Update teacher 34's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/34 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Update the school budget spent to 127059.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 127059}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have History, Art, PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"History\\\", \\\"Art\\\", \\\"PE\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 204.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/204"
+  },
+  {
+    "instruction": "Delete student 204.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/204"
+  },
+  {
+    "instruction": "Update student 204's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/204 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get all grades for student 411.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=411"
+  },
+  {
+    "instruction": "Delete all grades for student 411.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/411"
+  },
+  {
+    "instruction": "Update grades for student 411 to B in History and F in Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/411 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 218.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/218"
+  },
+  {
+    "instruction": "Delete student 218.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/218"
+  },
+  {
+    "instruction": "Update student 218's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/218 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get all grades for student 244.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=244"
+  },
+  {
+    "instruction": "Delete all grades for student 244.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/244"
+  },
+  {
+    "instruction": "Update grades for student 244 to F in History and C in Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/244 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 28.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/28"
+  },
+  {
+    "instruction": "Delete teacher 28.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/28"
+  },
+  {
+    "instruction": "Update teacher 28's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/28 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get details of student 365.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/365"
+  },
+  {
+    "instruction": "Delete student 365.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/365"
+  },
+  {
+    "instruction": "Update student 365's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/365 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have PE, Biology, Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"PE\\\", \\\"Biology\\\", \\\"Math\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 315.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/315"
+  },
+  {
+    "instruction": "Delete student 315.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/315"
+  },
+  {
+    "instruction": "Update student 315's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/315 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get details of teacher 42.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/42"
+  },
+  {
+    "instruction": "Delete teacher 42.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/42"
+  },
+  {
+    "instruction": "Update teacher 42's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/42 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 52.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/52"
+  },
+  {
+    "instruction": "Delete teacher 52.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/52"
+  },
+  {
+    "instruction": "Update teacher 52's subject to Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/52 {\\\"subject\\\": \\\"Science\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget spent to 822771.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 822771}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all grades for student 546.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=546"
+  },
+  {
+    "instruction": "Delete all grades for student 546.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/546"
+  },
+  {
+    "instruction": "Update grades for student 546 to A in English and C in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/546 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have English, Geography, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"English\\\", \\\"Geography\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 30.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/30"
+  },
+  {
+    "instruction": "Delete teacher 30.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/30"
+  },
+  {
+    "instruction": "Update teacher 30's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/30 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Get all grades for student 278.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=278"
+  },
+  {
+    "instruction": "Delete all grades for student 278.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/278"
+  },
+  {
+    "instruction": "Update grades for student 278 to E in History and C in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/278 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have PE, History, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"PE\\\", \\\"History\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have Art, PE, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"Art\\\", \\\"PE\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 101.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/101"
+  },
+  {
+    "instruction": "Delete teacher 101.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/101"
+  },
+  {
+    "instruction": "Update teacher 101's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/101 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget remaining to 478038.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 478038}"
+  },
+  {
+    "instruction": "Get details of student 140.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/140"
+  },
+  {
+    "instruction": "Delete student 140.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/140"
+  },
+  {
+    "instruction": "Update student 140's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/140 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Math, Science, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Math\\\", \\\"Science\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 35.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/35"
+  },
+  {
+    "instruction": "Delete teacher 35.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/35"
+  },
+  {
+    "instruction": "Update teacher 35's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/35 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 76.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/76"
+  },
+  {
+    "instruction": "Delete teacher 76.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/76"
+  },
+  {
+    "instruction": "Update teacher 76's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/76 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 246.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=246"
+  },
+  {
+    "instruction": "Delete all grades for student 246.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/246"
+  },
+  {
+    "instruction": "Update grades for student 246 to E in Science and C in Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/246 [{\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 128.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=128"
+  },
+  {
+    "instruction": "Delete all grades for student 128.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/128"
+  },
+  {
+    "instruction": "Update grades for student 128 to A in Geography and F in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/128 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Get all grades for student 525.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=525"
+  },
+  {
+    "instruction": "Delete all grades for student 525.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/525"
+  },
+  {
+    "instruction": "Update grades for student 525 to A in Science and F in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/525 [{\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have PE, Science, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"PE\\\", \\\"Science\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 135.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/135"
+  },
+  {
+    "instruction": "Delete student 135.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/135"
+  },
+  {
+    "instruction": "Update student 135's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/135 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of student 571.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/571"
+  },
+  {
+    "instruction": "Delete student 571.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/571"
+  },
+  {
+    "instruction": "Update student 571's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/571 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get details of teacher 64.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/64"
+  },
+  {
+    "instruction": "Delete teacher 64.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/64"
+  },
+  {
+    "instruction": "Update teacher 64's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/64 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget remaining to 610769.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 610769}"
+  },
+  {
+    "instruction": "Update the school budget total to 735477.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 735477}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 640811.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 640811}"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get details of teacher 50.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/50"
+  },
+  {
+    "instruction": "Delete teacher 50.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/50"
+  },
+  {
+    "instruction": "Update teacher 50's subject to Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/50 {\\\"subject\\\": \\\"Geography\\\"}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Math, PE, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Math\\\", \\\"PE\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 993680.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 993680}"
+  },
+  {
+    "instruction": "Get all grades for student 417.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=417"
+  },
+  {
+    "instruction": "Delete all grades for student 417.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/417"
+  },
+  {
+    "instruction": "Update grades for student 417 to E in Art and D in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/417 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 600.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=600"
+  },
+  {
+    "instruction": "Delete all grades for student 600.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/600"
+  },
+  {
+    "instruction": "Update grades for student 600 to B in Music and E in PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/600 [{\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 50.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/50"
+  },
+  {
+    "instruction": "Delete teacher 50.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/50"
+  },
+  {
+    "instruction": "Update teacher 50's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/50 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get details of student 579.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/579"
+  },
+  {
+    "instruction": "Delete student 579.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/579"
+  },
+  {
+    "instruction": "Update student 579's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/579 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Update the school budget spent to 961396.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 961396}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 94.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/94"
+  },
+  {
+    "instruction": "Delete teacher 94.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/94"
+  },
+  {
+    "instruction": "Update teacher 94's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/94 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 520.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=520"
+  },
+  {
+    "instruction": "Delete all grades for student 520.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/520"
+  },
+  {
+    "instruction": "Update grades for student 520 to E in Geography and C in Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/520 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get all grades for student 401.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=401"
+  },
+  {
+    "instruction": "Delete all grades for student 401.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/401"
+  },
+  {
+    "instruction": "Update grades for student 401 to B in Art and C in PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/401 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 67.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/67"
+  },
+  {
+    "instruction": "Delete teacher 67.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/67"
+  },
+  {
+    "instruction": "Update teacher 67's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/67 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 174.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/174"
+  },
+  {
+    "instruction": "Delete student 174.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/174"
+  },
+  {
+    "instruction": "Update student 174's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/174 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 100.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/100"
+  },
+  {
+    "instruction": "Delete teacher 100.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/100"
+  },
+  {
+    "instruction": "Update teacher 100's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/100 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Update the school budget remaining to 647706.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 647706}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 592881.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 592881}"
+  },
+  {
+    "instruction": "Get details of student 506.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/506"
+  },
+  {
+    "instruction": "Delete student 506.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/506"
+  },
+  {
+    "instruction": "Update student 506's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/506 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 48.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/48"
+  },
+  {
+    "instruction": "Delete teacher 48.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/48"
+  },
+  {
+    "instruction": "Update teacher 48's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/48 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get details of student 300.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/300"
+  },
+  {
+    "instruction": "Delete student 300.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/300"
+  },
+  {
+    "instruction": "Update student 300's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/300 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all grades for student 157.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=157"
+  },
+  {
+    "instruction": "Delete all grades for student 157.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/157"
+  },
+  {
+    "instruction": "Update grades for student 157 to D in Art and E in Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/157 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have English, Art, Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"English\\\", \\\"Art\\\", \\\"Biology\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 57.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/57"
+  },
+  {
+    "instruction": "Delete teacher 57.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/57"
+  },
+  {
+    "instruction": "Update teacher 57's subject to Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/57 {\\\"subject\\\": \\\"Biology\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get details of teacher 18.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/18"
+  },
+  {
+    "instruction": "Delete teacher 18.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/18"
+  },
+  {
+    "instruction": "Update teacher 18's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/18 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Update the school budget total to 695428.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 695428}"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 168.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/168"
+  },
+  {
+    "instruction": "Delete student 168.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/168"
+  },
+  {
+    "instruction": "Update student 168's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/168 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get all grades for student 304.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=304"
+  },
+  {
+    "instruction": "Delete all grades for student 304.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/304"
+  },
+  {
+    "instruction": "Update grades for student 304 to E in Math and F in Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/304 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Update the school budget total to 551795.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 551795}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get details of student 293.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/293"
+  },
+  {
+    "instruction": "Delete student 293.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/293"
+  },
+  {
+    "instruction": "Update student 293's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/293 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of student 420.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/420"
+  },
+  {
+    "instruction": "Delete student 420.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/420"
+  },
+  {
+    "instruction": "Update student 420's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/420 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get all grades for student 577.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=577"
+  },
+  {
+    "instruction": "Delete all grades for student 577.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/577"
+  },
+  {
+    "instruction": "Update grades for student 577 to E in Biology and F in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/577 [{\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 599.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/599"
+  },
+  {
+    "instruction": "Delete student 599.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/599"
+  },
+  {
+    "instruction": "Update student 599's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/599 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Update the school budget total to 211298.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 211298}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all grades for student 428.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=428"
+  },
+  {
+    "instruction": "Delete all grades for student 428.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/428"
+  },
+  {
+    "instruction": "Update grades for student 428 to F in PE and C in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/428 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all grades for student 456.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=456"
+  },
+  {
+    "instruction": "Delete all grades for student 456.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/456"
+  },
+  {
+    "instruction": "Update grades for student 456 to F in English and D in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/456 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Update the school budget spent to 233681.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 233681}"
+  },
+  {
+    "instruction": "Get all grades for student 393.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=393"
+  },
+  {
+    "instruction": "Delete all grades for student 393.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/393"
+  },
+  {
+    "instruction": "Update grades for student 393 to B in History and D in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/393 [{\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have Biology, PE, Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Biology\\\", \\\"PE\\\", \\\"Geography\\\"]}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have History, Math, Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"History\\\", \\\"Math\\\", \\\"Chemistry\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 905823.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 905823}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of student 436.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/436"
+  },
+  {
+    "instruction": "Delete student 436.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/436"
+  },
+  {
+    "instruction": "Update student 436's grade to 12.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/436 {\\\"grade\\\": 12}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget spent to 971855.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 971855}"
+  },
+  {
+    "instruction": "Update the school budget total to 634401.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 634401}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Chemistry, Math, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Chemistry\\\", \\\"Math\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 53.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/53"
+  },
+  {
+    "instruction": "Delete teacher 53.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/53"
+  },
+  {
+    "instruction": "Update teacher 53's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/53 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get details of student 580.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/580"
+  },
+  {
+    "instruction": "Delete student 580.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/580"
+  },
+  {
+    "instruction": "Update student 580's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/580 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 102.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/102"
+  },
+  {
+    "instruction": "Delete teacher 102.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/102"
+  },
+  {
+    "instruction": "Update teacher 102's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/102 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 547.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=547"
+  },
+  {
+    "instruction": "Delete all grades for student 547.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/547"
+  },
+  {
+    "instruction": "Update grades for student 547 to A in Geography and D in Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/547 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have Science, Math, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Science\\\", \\\"Math\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 111.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/111"
+  },
+  {
+    "instruction": "Delete student 111.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/111"
+  },
+  {
+    "instruction": "Update student 111's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/111 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get details of teacher 61.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/61"
+  },
+  {
+    "instruction": "Delete teacher 61.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/61"
+  },
+  {
+    "instruction": "Update teacher 61's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/61 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 334.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=334"
+  },
+  {
+    "instruction": "Delete all grades for student 334.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/334"
+  },
+  {
+    "instruction": "Update grades for student 334 to E in Science and D in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/334 [{\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have PE, English, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"PE\\\", \\\"English\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "Get details of student 358.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/358"
+  },
+  {
+    "instruction": "Delete student 358.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/358"
+  },
+  {
+    "instruction": "Update student 358's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/358 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Geography, Chemistry, Biology.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Geography\\\", \\\"Chemistry\\\", \\\"Biology\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 160.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=160"
+  },
+  {
+    "instruction": "Delete all grades for student 160.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/160"
+  },
+  {
+    "instruction": "Update grades for student 160 to B in English and E in Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/160 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"B\\\"}, {\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have History, Science, English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"History\\\", \\\"Science\\\", \\\"English\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 83.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/83"
+  },
+  {
+    "instruction": "Delete teacher 83.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/83"
+  },
+  {
+    "instruction": "Update teacher 83's subject to History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/83 {\\\"subject\\\": \\\"History\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 275.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=275"
+  },
+  {
+    "instruction": "Delete all grades for student 275.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/275"
+  },
+  {
+    "instruction": "Update grades for student 275 to C in English and A in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/275 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget total to 879856.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 879856}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 49.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/49"
+  },
+  {
+    "instruction": "Delete teacher 49.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/49"
+  },
+  {
+    "instruction": "Update teacher 49's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/49 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Geography, Math, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Geography\\\", \\\"Math\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 62.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/62"
+  },
+  {
+    "instruction": "Delete teacher 62.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/62"
+  },
+  {
+    "instruction": "Update teacher 62's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/62 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have Music, PE, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"Music\\\", \\\"PE\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 98.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Delete teacher 98.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Update teacher 98's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/98 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 423.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=423"
+  },
+  {
+    "instruction": "Delete all grades for student 423.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/423"
+  },
+  {
+    "instruction": "Update grades for student 423 to C in PE and A in English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/423 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get details of teacher 45.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/45"
+  },
+  {
+    "instruction": "Delete teacher 45.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/45"
+  },
+  {
+    "instruction": "Update teacher 45's subject to Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/45 {\\\"subject\\\": \\\"Art\\\"}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of teacher 26.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/26"
+  },
+  {
+    "instruction": "Delete teacher 26.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/26"
+  },
+  {
+    "instruction": "Update teacher 26's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/26 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Update the school budget total to 311499.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 311499}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Update the school budget total to 451913.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 451913}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 31.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/31"
+  },
+  {
+    "instruction": "Delete teacher 31.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/31"
+  },
+  {
+    "instruction": "Update teacher 31's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/31 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get all students in grade 10.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=10"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 491.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=491"
+  },
+  {
+    "instruction": "Delete all grades for student 491.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/491"
+  },
+  {
+    "instruction": "Update grades for student 491 to D in Geography and F in PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/491 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget remaining to 957190.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 957190}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Geography, Music, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Geography\\\", \\\"Music\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get all grades for student 428.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=428"
+  },
+  {
+    "instruction": "Delete all grades for student 428.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/428"
+  },
+  {
+    "instruction": "Update grades for student 428 to A in Math and C in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/428 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 588.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/588"
+  },
+  {
+    "instruction": "Delete student 588.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/588"
+  },
+  {
+    "instruction": "Update student 588's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/588 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Biology, Science, Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Biology\\\", \\\"Science\\\", \\\"Art\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get all grades for student 170.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=170"
+  },
+  {
+    "instruction": "Delete all grades for student 170.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/170"
+  },
+  {
+    "instruction": "Update grades for student 170 to C in Biology and F in Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/170 [{\\\"subject\\\": \\\"Biology\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have English, PE, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"English\\\", \\\"PE\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 98.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Delete teacher 98.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/98"
+  },
+  {
+    "instruction": "Update teacher 98's subject to Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/98 {\\\"subject\\\": \\\"Chemistry\\\"}"
+  },
+  {
+    "instruction": "Get details of student 441.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/441"
+  },
+  {
+    "instruction": "Delete student 441.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/441"
+  },
+  {
+    "instruction": "Update student 441's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/441 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 742878.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 742878}"
+  },
+  {
+    "instruction": "Update the school budget remaining to 866120.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 866120}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 108.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=108"
+  },
+  {
+    "instruction": "Delete all grades for student 108.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/108"
+  },
+  {
+    "instruction": "Update grades for student 108 to C in PE and E in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/108 [{\\\"subject\\\": \\\"PE\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"E\\\"}]"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of teacher 61.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/61"
+  },
+  {
+    "instruction": "Delete teacher 61.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/61"
+  },
+  {
+    "instruction": "Update teacher 61's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/61 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get details of teacher 94.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/94"
+  },
+  {
+    "instruction": "Delete teacher 94.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/94"
+  },
+  {
+    "instruction": "Update teacher 94's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/94 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Monday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Monday"
+  },
+  {
+    "instruction": "Delete schedule for Monday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Monday"
+  },
+  {
+    "instruction": "Update schedule for Monday to have Biology, English, Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Monday {\\\"classes\\\": [\\\"Biology\\\", \\\"English\\\", \\\"Music\\\"]}"
+  },
+  {
+    "instruction": "Update the school budget spent to 169731.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"spent\\\": 169731}"
+  },
+  {
+    "instruction": "Get details of teacher 6.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/6"
+  },
+  {
+    "instruction": "Delete teacher 6.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/6"
+  },
+  {
+    "instruction": "Update teacher 6's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/6 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 55.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/55"
+  },
+  {
+    "instruction": "Delete teacher 55.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/55"
+  },
+  {
+    "instruction": "Update teacher 55's subject to Music.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/55 {\\\"subject\\\": \\\"Music\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 574.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=574"
+  },
+  {
+    "instruction": "Delete all grades for student 574.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/574"
+  },
+  {
+    "instruction": "Update grades for student 574 to E in Music and C in Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/574 [{\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"C\\\"}]"
+  },
+  {
+    "instruction": "Update the school budget total to 775244.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 775244}"
+  },
+  {
+    "instruction": "Get details of student 215.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/215"
+  },
+  {
+    "instruction": "Delete student 215.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/215"
+  },
+  {
+    "instruction": "Update student 215's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/215 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get details of student 202.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/202"
+  },
+  {
+    "instruction": "Delete student 202.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/202"
+  },
+  {
+    "instruction": "Update student 202's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/202 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all grades for student 393.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=393"
+  },
+  {
+    "instruction": "Delete all grades for student 393.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/393"
+  },
+  {
+    "instruction": "Update grades for student 393 to E in Music and F in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/393 [{\\\"subject\\\": \\\"Music\\\", \\\"grade\\\": \\\"E\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have Geography, History, English.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"Geography\\\", \\\"History\\\", \\\"English\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 43.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/43"
+  },
+  {
+    "instruction": "Delete teacher 43.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/43"
+  },
+  {
+    "instruction": "Update teacher 43's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/43 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Get details of student 569.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/569"
+  },
+  {
+    "instruction": "Delete student 569.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/569"
+  },
+  {
+    "instruction": "Update student 569's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/569 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all grades for student 145.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=145"
+  },
+  {
+    "instruction": "Delete all grades for student 145.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/145"
+  },
+  {
+    "instruction": "Update grades for student 145 to C in English and A in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/145 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get schedule for Tuesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Tuesday"
+  },
+  {
+    "instruction": "Delete schedule for Tuesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Tuesday"
+  },
+  {
+    "instruction": "Update schedule for Tuesday to have Math, PE, Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Tuesday {\\\"classes\\\": [\\\"Math\\\", \\\"PE\\\", \\\"Chemistry\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 516.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/516"
+  },
+  {
+    "instruction": "Delete student 516.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/516"
+  },
+  {
+    "instruction": "Update student 516's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/516 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "Get all students in grade 9.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=9"
+  },
+  {
+    "instruction": "Update the school budget remaining to 757593.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 757593}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all grades for student 227.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=227"
+  },
+  {
+    "instruction": "Delete all grades for student 227.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/227"
+  },
+  {
+    "instruction": "Update grades for student 227 to F in Art and A in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/227 [{\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have Art, English, Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"Art\\\", \\\"English\\\", \\\"Science\\\"]}"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get schedule for Thursday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Thursday"
+  },
+  {
+    "instruction": "Delete schedule for Thursday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Thursday"
+  },
+  {
+    "instruction": "Update schedule for Thursday to have English, Art, Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Thursday {\\\"classes\\\": [\\\"English\\\", \\\"Art\\\", \\\"Math\\\"]}"
+  },
+  {
+    "instruction": "Get details of teacher 75.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/75"
+  },
+  {
+    "instruction": "Delete teacher 75.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/75"
+  },
+  {
+    "instruction": "Update teacher 75's subject to Math.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/75 {\\\"subject\\\": \\\"Math\\\"}"
+  },
+  {
+    "instruction": "Get details of teacher 90.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/90"
+  },
+  {
+    "instruction": "Delete teacher 90.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/90"
+  },
+  {
+    "instruction": "Update teacher 90's subject to PE.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/90 {\\\"subject\\\": \\\"PE\\\"}"
+  },
+  {
+    "instruction": "Get all grades for student 502.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=502"
+  },
+  {
+    "instruction": "Delete all grades for student 502.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/502"
+  },
+  {
+    "instruction": "Update grades for student 502 to A in English and D in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/502 [{\\\"subject\\\": \\\"English\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"D\\\"}]"
+  },
+  {
+    "instruction": "Get details of student 358.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/358"
+  },
+  {
+    "instruction": "Delete student 358.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/358"
+  },
+  {
+    "instruction": "Update student 358's grade to 11.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/358 {\\\"grade\\\": 11}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 584.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=584"
+  },
+  {
+    "instruction": "Delete all grades for student 584.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/584"
+  },
+  {
+    "instruction": "Update grades for student 584 to C in Geography and A in Art.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/584 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Art\\\", \\\"grade\\\": \\\"A\\\"}]"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get details of teacher 81.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Delete teacher 81.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/teachers/81"
+  },
+  {
+    "instruction": "Update teacher 81's subject to Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/teachers/81 {\\\"subject\\\": \\\"Geography\\\"}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 219.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=219"
+  },
+  {
+    "instruction": "Delete all grades for student 219.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/219"
+  },
+  {
+    "instruction": "Update grades for student 219 to C in Geography and F in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/219 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"C\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get all grades for student 250.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=250"
+  },
+  {
+    "instruction": "Delete all grades for student 250.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/250"
+  },
+  {
+    "instruction": "Update grades for student 250 to D in Geography and F in Science.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/250 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"Science\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Get schedule for Wednesday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Wednesday"
+  },
+  {
+    "instruction": "Delete schedule for Wednesday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Wednesday"
+  },
+  {
+    "instruction": "Update schedule for Wednesday to have Science, History, Geography.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Wednesday {\\\"classes\\\": [\\\"Science\\\", \\\"History\\\", \\\"Geography\\\"]}"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get schedule for Friday.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule?day=Friday"
+  },
+  {
+    "instruction": "Delete schedule for Friday.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/schedule/Friday"
+  },
+  {
+    "instruction": "Update schedule for Friday to have PE, Math, History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/schedule/Friday {\\\"classes\\\": [\\\"PE\\\", \\\"Math\\\", \\\"History\\\"]}"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get details of student 481.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/481"
+  },
+  {
+    "instruction": "Delete student 481.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/481"
+  },
+  {
+    "instruction": "Update student 481's grade to 10.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/481 {\\\"grade\\\": 10}"
+  },
+  {
+    "instruction": "Get details of student 241.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students/241"
+  },
+  {
+    "instruction": "Delete student 241.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/students/241"
+  },
+  {
+    "instruction": "Update student 241's grade to 9.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/students/241 {\\\"grade\\\": 9}"
+  },
+  {
+    "instruction": "Get all students in grade 11.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=11"
+  },
+  {
+    "instruction": "List all teachers.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/teachers"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Update the school budget total to 571591.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"total\\\": 571591}"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get the school budget details.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/budget"
+  },
+  {
+    "instruction": "Get a list of all students.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students"
+  },
+  {
+    "instruction": "Get a list of all grades.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades"
+  },
+  {
+    "instruction": "Get the full school schedule.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/schedule"
+  },
+  {
+    "instruction": "Get all grades for student 335.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=335"
+  },
+  {
+    "instruction": "Delete all grades for student 335.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/335"
+  },
+  {
+    "instruction": "Update grades for student 335 to A in Geography and B in Chemistry.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/335 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"A\\\"}, {\\\"subject\\\": \\\"Chemistry\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get all grades for student 116.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=116"
+  },
+  {
+    "instruction": "Delete all grades for student 116.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/116"
+  },
+  {
+    "instruction": "Update grades for student 116 to F in Math and B in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/116 [{\\\"subject\\\": \\\"Math\\\", \\\"grade\\\": \\\"F\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"B\\\"}]"
+  },
+  {
+    "instruction": "Get all students in grade 12.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/students?gradeLevel=12"
+  },
+  {
+    "instruction": "Get all grades for student 541.",
+    "input": "",
+    "output": "GET http://localhost:5001/api/grades?student_id=541"
+  },
+  {
+    "instruction": "Delete all grades for student 541.",
+    "input": "",
+    "output": "DELETE http://localhost:5001/api/grades/541"
+  },
+  {
+    "instruction": "Update grades for student 541 to D in Geography and F in History.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/grades/541 [{\\\"subject\\\": \\\"Geography\\\", \\\"grade\\\": \\\"D\\\"}, {\\\"subject\\\": \\\"History\\\", \\\"grade\\\": \\\"F\\\"}]"
+  },
+  {
+    "instruction": "Update the school budget remaining to 500986.",
+    "input": "",
+    "output": "PUT http://localhost:5001/api/budget {\\\"remaining\\\": 500986}"
+  }
+]
