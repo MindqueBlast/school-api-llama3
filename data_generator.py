@@ -1,169 +1,63 @@
 import json
 import random
 
-teachers = list(range(6, 106))
-students = list(range(106, 606))
-subjects = ["Math", "Science", "History", "Art", "English", "Music", "PE", "Geography", "Biology", "Chemistry"]
-grades = ["A", "B", "C", "D", "E", "F"]
-days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-budget_fields = ["total", "spent", "remaining"]
+NUM_EXAMPLES = 1000
+BASE_URL = "http://localhost:5001/api"
 
-def random_teacher():
-    tid = random.choice(teachers)
-    subj = random.choice(subjects)
-    return [
-        {
-            "instruction": f"Get details of teacher {tid}.",
-            "input": "",
-            "output": f"GET http://localhost:5001/api/teachers/{tid}"
-        },
-        {
-            "instruction": f"Delete teacher {tid}.",
-            "input": "",
-            "output": f"DELETE http://localhost:5001/api/teachers/{tid}"
-        },
-        {
-            "instruction": f"Update teacher {tid}'s subject to {subj}.",
-            "input": "",
-            "output": f"PUT http://localhost:5001/api/teachers/{tid} {{\\\"subject\\\": \\\"{subj}\\\"}}"
-        }
-    ]
+# Define categories and patterns
+api_templates = {
+    "teachers": [
+        lambda: ("List all teachers.", "GET {}/teachers".format(BASE_URL)),
+        lambda: ("Get details of teacher {}.".format(tid := random.randint(1, 50)), f"GET {BASE_URL}/teachers/{tid}"),
+        lambda: ("Delete teacher {}.".format(tid := random.randint(1, 50)), f"DELETE {BASE_URL}/teachers/{tid}"),
+        lambda: ("Update teacher {}'s subject to {}.".format(tid := random.randint(1, 50), subj := random.choice(["Math", "Science", "History"])),
+                 f"PUT {BASE_URL}/teachers/{tid} {{\"subject\": \"{subj}\"}}"),
+    ],
+    "students": [
+        lambda: ("List all students.", "GET {}/students".format(BASE_URL)),
+        lambda: ("Get student {}'s information.".format(sid := random.randint(100, 200)), f"GET {BASE_URL}/students/{sid}"),
+        lambda: ("Delete student {}.".format(sid := random.randint(100, 200)), f"DELETE {BASE_URL}/students/{sid}"),
+        lambda: ("Add a new student named {}.".format(name := random.choice(["John Doe", "Jane Smith", "Alice", "Bob"])),
+                 f"POST {BASE_URL}/students {{\"name\": \"{name}\", \"grade\": {random.randint(1,12)}}}"),
+    ],
+    "grades": [
+        lambda: ("Get grades for student {}.".format(sid := random.randint(100, 200)), f"GET {BASE_URL}/grades?student_id={sid}"),
+        lambda: ("Update grade for student {} in subject {}.".format(sid := random.randint(100, 200), subj := random.choice(["Math", "Science", "History"])),
+                 f"PUT {BASE_URL}/grades/{sid} {{\"subject\": \"{subj}\", \"grade\": \"{random.choice(['A','B','C'])}\"}}"),
+        lambda: ("Delete grades for student {}.".format(sid := random.randint(100, 200)), f"DELETE {BASE_URL}/grades/{sid}"),
+    ],
+    "schedule": [
+        lambda: ("Get schedule for {}.".format(day := random.choice(["Monday", "Tuesday", "Friday"])),
+                 f"GET {BASE_URL}/schedule?day={day}"),
+        lambda: ("Update schedule for {}.".format(day := random.choice(["Monday", "Tuesday", "Friday"])),
+                 f"PUT {BASE_URL}/schedule/{day} {{\"classes\": [\"Math\", \"English\"]}}"),
+        lambda: ("Delete schedule for {}.".format(day := random.choice(["Monday", "Tuesday", "Friday"])),
+                 f"DELETE {BASE_URL}/schedule/{day}"),
+    ],
+    "budget": [
+        lambda: ("Get the current school budget.", f"GET {BASE_URL}/budget"),
+        lambda: ("Update the budget to {} dollars.".format(amt := random.randint(100000, 500000)),
+                 f"PUT {BASE_URL}/budget {{\"amount\": {amt}}}"),
+        lambda: ("Delete the current budget entry.", f"DELETE {BASE_URL}/budget"),
+    ],
+}
 
-def random_student():
-    sid = random.choice(students)
-    grade_num = random.randint(9, 12)
-    return [
-        {
-            "instruction": f"Get details of student {sid}.",
-            "input": "",
-            "output": f"GET http://localhost:5001/api/students/{sid}"
-        },
-        {
-            "instruction": f"Delete student {sid}.",
-            "input": "",
-            "output": f"DELETE http://localhost:5001/api/students/{sid}"
-        },
-        {
-            "instruction": f"Update student {sid}'s grade to {grade_num}.",
-            "input": "",
-            "output": f"PUT http://localhost:5001/api/students/{sid} {{\\\"grade\\\": {grade_num}}}"
-        }
-    ]
+# Generate dataset
+all_examples = []
+categories = list(api_templates.keys())
 
-def random_grades():
-    sid = random.choice(students)
-    subj1, subj2 = random.sample(subjects, 2)
-    grade1, grade2 = random.sample(grades, 2)
-    return [
-        {
-            "instruction": f"Get all grades for student {sid}.",
-            "input": "",
-            "output": f"GET http://localhost:5001/api/grades?student_id={sid}"
-        },
-        {
-            "instruction": f"Delete all grades for student {sid}.",
-            "input": "",
-            "output": f"DELETE http://localhost:5001/api/grades/{sid}"
-        },
-        {
-            "instruction": f"Update grades for student {sid} to {grade1} in {subj1} and {grade2} in {subj2}.",
-            "input": "",
-            "output": f"PUT http://localhost:5001/api/grades/{sid} [{{\\\"subject\\\": \\\"{subj1}\\\", \\\"grade\\\": \\\"{grade1}\\\"}}, {{\\\"subject\\\": \\\"{subj2}\\\", \\\"grade\\\": \\\"{grade2}\\\"}}]"
-        }
-    ]
+for _ in range(NUM_EXAMPLES):
+    category = random.choice(categories)
+    example_generator = random.choice(api_templates[category])
+    instruction, output = example_generator()
+    all_examples.append({
+        "instruction": instruction,
+        "input": "",
+        "output": output
+    })
 
-def random_schedule():
-    day = random.choice(days)
-    classes = random.sample(subjects, 3)
-    return [
-        {
-            "instruction": f"Get schedule for {day}.",
-            "input": "",
-            "output": f"GET http://localhost:5001/api/schedule?day={day}"
-        },
-        {
-            "instruction": f"Delete schedule for {day}.",
-            "input": "",
-            "output": f"DELETE http://localhost:5001/api/schedule/{day}"
-        },
-        {
-            "instruction": f"Update schedule for {day} to have {', '.join(classes)}.",
-            "input": "",
-            "output": f"PUT http://localhost:5001/api/schedule/{day} {{\\\"classes\\\": [\\\"{classes[0]}\\\", \\\"{classes[1]}\\\", \\\"{classes[2]}\\\"]}}"
-        }
-    ]
-
-def random_budget():
-    field = random.choice(budget_fields)
-    value = random.randint(100000, 999999)
-    return [
-        {
-            "instruction": f"Update the school budget {field} to {value}.",
-            "input": "",
-            "output": f"PUT http://localhost:5001/api/budget {{\\\"{field}\\\": {value}}}"
-        }
-    ]
-
-def random_listings():
-    return [
-        {
-            "instruction": "Get a list of all students.",
-            "input": "",
-            "output": "GET http://localhost:5001/api/students"
-        },
-        {
-            "instruction": "Get a list of all grades.",
-            "input": "",
-            "output": "GET http://localhost:5001/api/grades"
-        },
-        {
-            "instruction": "Get the full school schedule.",
-            "input": "",
-            "output": "GET http://localhost:5001/api/schedule"
-        }
-    ]
-
-def random_grade_level():
-    grade = random.randint(9, 12)
-    return [
-        {
-            "instruction": f"Get all students in grade {grade}.",
-            "input": "",
-            "output": f"GET http://localhost:5001/api/students?gradeLevel={grade}"
-        }
-    ]
-
-def random_teacher_list():
-    return [
-        {
-            "instruction": "List all teachers.",
-            "input": "",
-            "output": "GET http://localhost:5001/api/teachers"
-        }
-    ]
-
-def random_budget_get():
-    return [
-        {
-            "instruction": "Get the school budget details.",
-            "input": "",
-            "output": "GET http://localhost:5001/api/budget"
-        }
-    ]
-
-all_generators = [
-    random_teacher, random_student, random_grades, random_schedule,
-    random_budget, random_listings, random_grade_level, random_teacher_list, random_budget_get
-]
-
-entries = []
-while len(entries) < 1000:
-    gen = random.choice(all_generators)
-    for entry in gen():
-        if len(entries) < 1000:
-            entries.append(entry)
-        else:
-            break
-
+# Save to JSON file
 with open("school_api_data.json", "w") as f:
-    json.dump(entries, f, indent=2)
+    json.dump(all_examples, f, indent=2)
+
+print("Generated school_api_data.json with", len(all_examples), "examples.")
